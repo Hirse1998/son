@@ -1,0 +1,29 @@
+package simple Frame;
+import java.awt.*；
+import javax.swing.*;
+public class SimpleFrameTest
+{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EventQueue.invokeLater(() ->
+		{
+			SimpletFrame frame=new SimpletFrame();
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.setVisible(true);
+			
+		});
+
+		
+	}
+
+}
+ class SimpletFrame extends JFrame
+ {
+	 private static final int DEFAULT_WIODTH=300;
+	 private static final int DEFAULT_HEIGTH=200;
+	 public void SimpleFrame()
+	 {
+		 setSize(DEFAULT_WIODTH,DEFAULT_HEIGTH);
+	 }
+}
